@@ -10,10 +10,15 @@ data class Club(
     val uel: Int,
 ) {
     val totalTrophy: Int
-        get() = epl + fa + efl + ucl + uel
+        get() = epl + fa + efl + ucl +  uel
 }
 
 // extension function recap
 fun Club.recap(): String {
-    return "$name berhasil meraih $epl trofi Liga Premier Inggris, $fa trofi FA, $efl trofi EFL, $ucl trofi Liga Champion, dan $uel trofi Liga Eropa UEFA"
+    return "${this.name} berhasil meraih " +
+            "${this.epl} trofi Liga Primer Inggris, " +
+            "${this.fa} trofi FA, " +
+            "${this.efl} trofi EFL, " +
+            "${this.ucl} trofi Liga Champions, " +
+            "dan ${this.uel} trofi Liga Eropa UEFA"
 }
