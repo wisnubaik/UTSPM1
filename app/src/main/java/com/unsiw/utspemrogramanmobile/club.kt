@@ -1,5 +1,4 @@
 package com.unsiw.utspemrogramanmobile
-
 // data class Club
 data class Club(
     val name: String,
